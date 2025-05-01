@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Final</title>
+    <link rel="stylesheet" href="css/jquery-ui1.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous"></script>
+    <!-- jQuery UI CDN -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+        integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <!-- load smart menus -->
+    <script src="smartmenus-1.2.1/smartmenus-1.2.1/jquery.smartmenus.js"></script>
+    <link href="smartmenus-1.2.1/smartmenus-1.2.1/css/sm-core-css.css" rel="stylesheet">
+    <link href="smartmenus-1.2.1/smartmenus-1.2.1/css/sm-blue/sm-blue.css" rel="stylesheet">
+    <!-- load jQuery Validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <!-- load application JavaScript -->
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Final Assignment</h1>
+    </header>
+    <!-- Start of NAV-->
+    <ul class="sm sm-blue">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a>
+            <ul>
+                <li><a href="#">Our History</a></li>
+                <li><a href="#">Driving Directions</a></li>
+                <li><a href="#">Hours</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Our Products</a>
+            <ul>
+                <li><a href="#">Food</a>
+                    <ul>
+                        <li><a href="#">Produce</a></li>
+                        <li><a href="#">Meat</a></li>
+                        <li><a href="#">Dairy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Not Food</a>
+                    <ul>
+                        <li><a href="#">Lawn Mowers</a></li>
+                        <li><a href="#">Winter Coats</a></li>
+                        <li><a href="#">Shovels</a>
+                            <ul>
+                                <li><a href="#">Snow Shovels</a></li>
+                                <li><a href="#">Garden Shovels</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Deodorant</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!-- END OF NAV-->
+     &nbsp;
+    <main>
+        <!-- Start of accordion -->
+        <form action="success.html" method="post" id="jobApp">
+            <div id="polka">
+                <h3>Personal Info</h3>
+                <div id="pFirst">
+                    <div class="formRow">
+                        <label for="lastName">Last Name </label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                    <button type="button" id="next1">Next</button>
+                </div>
+                <h3>Contact Info</h3>
+                <div id="pSecond">
+                    <div class="formRow">
+                        <label for="streetAddress">Street address</label>
+                        <input type="text" name="streetAddress" id="streetAddress">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="apt">Apt/ste</label>
+                        <input type="text" name="apt" id="apt">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="zip">Zip Code</label>
+                        <input type="text" name="zip" id="zip">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="email">email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <button type="button" id="next2">Next</button>
+                </div>
+                <h3>Education</h3>
+                <div id="pThird">
+                    <div class="formRow">
+                        <label for="eduaction">Highest Level of Education</label>
+                        <select name="educatiuon" id="education">
+                            <option value="01">High School Diploma or GED</option>
+                            <option value="02">Associate's Degree</option>
+                            <option value="03">Bachelor's Degree</option>
+                            <option value="04">Master's Degree</option>
+                            <option value="05">Doctoral Degree (PhD, EdD, etc.)</option>  
+                        </select>             
+                     </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="school">School/College name</label>
+                        <input type="text" name="school" id="school">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="graduation">Graduation Year</label>
+                        <input type="text" name="graduation" id="graduation">
+                    </div>
+                    &nbsp;
+                    <button type="button" id="next3">Next</button>
+                </div>
+                <h3>Recent Jobs</h3>
+                <div id="pFirst">
+                    <h4>Job 1</h4>
+                    <div class="formRow">
+                        <label for="title1">Title</label>
+                        <input type="text" name="title1" id="title1">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="employer1">Employer</label>
+                        <input type="text" name="employer1" id="employer1">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="startDate1">Start Date</label>
+                        <input type="date" name="startDate1" id="startDate1">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="endDate1">End Date</label>
+                        <input type="date" name="endDate1" id="endDate1">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="description1" class="center-text">Description</label>
+                        <textarea id="description1" name="description1" rows="4" cols="50"></textarea>
+                    </div>
+                    <!-- Second job-->
+                    <h4>Job 2</h4>
+                    <div class="formRow">
+                        <label for="title2">Title</label>
+                        <input type="text" name="title2" id="title2">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="employer2">Employer</label>
+                        <input type="text" name="employer2" id="employer2">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="startDate2">Start Date</label>
+                        <input type="date" name="startDate2" id="startDate2">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="endDate2">End Date</label>
+                        <input type="date" name="endDate2" id="endDate2">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="description2" class="center-text">Description</label>
+                        <textarea id="description2" name="description2" rows="4" cols="50"></textarea>
+                    </div>
+                    <!--Third job-->
+                    <h4>Job 3</h4>
+                    <div class="formRow">
+                        <label for="title3">Title</label>
+                        <input type="text" name="title3" id="title3">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="employer3">Employer</label>
+                        <input type="text" name="employer3" id="employer3">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="startDate3">Start Date</label>
+                        <input type="date" name="startDate3" id="startDate3">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="endDate3">End Date</label>
+                        <input type="date" name="endDate3" id="endDate3">
+                    </div>
+                    &nbsp;
+                    <div class="formRow">
+                        <label for="description3" class="center-text">Description</label>
+                        <textarea id="description3" name="description3" rows="4" cols="50"></textarea>
+                    </div>
+                    <div id="submitDiv">
+                        <input type="submit" value="Apply now!">
+                    </div>
+                </div>
+            </div>
+            <!-- End of accordion -->
+        </form>
+        <div id="message"> Thank you for your application, you can expect to hear from us in 3-5 business days.
+
+        </div>
+    </main>
+</body>
+</html>

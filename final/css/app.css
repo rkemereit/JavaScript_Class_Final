@@ -1,0 +1,64 @@
+/*
+Author: Richard Kemereit
+Date: 12/8/24
+File: app.css
+*/
+
+/* General form styles */
+form {
+    max-width: 600px;
+    margin: 0 auto; /* Center the form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.formRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Adjust as needed for spacing */
+}
+
+.form-label {
+    width: 150px; /* Fixed width for labels */
+    text-align: right;
+    margin-right: 20px; /* Space between label and input */
+    font-weight: bold; /* Make labels bold for better readability */
+}
+
+.formRow input, .formRow select, .formRow textarea {
+    width: 200px; /* Set a slightly smaller width for all input elements */
+    padding: 10px; /* Add padding for better appearance */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Style for text areas to match other input fields */
+textarea {
+    resize: vertical; /* Allow vertical resizing, disable horizontal */
+}
+
+/* Styles for buttons */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+}
+
+#message { 
+    display: none;
+     /* Initially hide the message */
+      text-align: center; 
+      margin-top: 20px;
+       font-size: 1.2em;
+        color: green; }
